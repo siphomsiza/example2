@@ -1,0 +1,16 @@
+defaults: &defaults
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *defaults
+  database: mars_rovers
+
+production:
+  <<: *defaults
+  database: mars_rovers
+
+test:
+  <<: *defaults
+  database: mars_rovers_test
